@@ -5,7 +5,7 @@ const AppMenu = ({menuItems}) => {
     return (
             <ul className="layout-menu">
                 {menuItems?.map((item, i) => {
-                    return !item?.seperator ? <AppMenuitem item={item} root={true} index={i} key={item.label}  /> : <li className="menu-separator"></li>;
+                    return !item?.seperator ? <AppMenuitem item={item} root={true} index={i} key={i}  /> : <li className="menu-separator"></li>;
                   })}
            </ul>
     );

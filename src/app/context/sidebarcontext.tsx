@@ -1,11 +1,10 @@
 "use client";
 import React, { createContext, useState } from "react";
 import { AppMenuItem, ChildContainerProps } from "../types/types";
-import { RouterPath } from "../shared/constants/routing";
+import { menus } from "../shared/constants/menu";
 
 
-const initialMenu: AppMenuItem[] = [
-];
+ const initialMenu: AppMenuItem[] = menus
 
 export interface MenuItemContextProps {
   menus: AppMenuItem[];
